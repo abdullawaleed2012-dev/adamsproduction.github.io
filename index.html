@@ -1,110 +1,456 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Adam's Production</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat:wght@400;700&display=swap');
-  body {
-    margin: 0;
-    background: #121212;
-    color: #d4af37;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  header h1 {
-    font-family: 'Cairo', sans-serif;
-    font-size: 2.8rem;
-    margin: 0;
-  }
-  header p {
-    font-size: 1.1rem;
-    margin: 5px 0 0 0;
-    color: #ffd700;
-  }
-  .description {
-    font-family: 'Cairo', sans-serif;
-    text-align: center;
-    max-width: 400px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    white-space: pre-line;
-  }
-  .links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    max-width: 320px;
-  }
-  .link-btn {
-    background: #d4af37;
-    color: #121212;
-    text-decoration: none;
-    padding: 14px 20px;
-    font-weight: 700;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    text-align: center;
-    transition: background 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .link-btn:hover {
-    background: #b0881a;
-  }
-  footer {
-    margin-top: auto;
-    font-size: 0.9rem;
-    color: #666;
-    padding: 10px 0 5px;
-  }
-  @media (max-width: 400px) {
-    header h1 {
-      font-size: 2rem;
-    }
-    .link-btn {
-      font-size: 1rem;
-      padding: 12px 16px;
-    }
-  }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adam&#39;s Production — Music Production Studio</title>
+  <meta name="description" content="Adam's Production — Music Production Studio. Recording, events, DJs, sound engineering, and artist management." />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="/images/favicon.png" />
 </head>
-<body>
-<header>
-  <h1>Adam's Production<br>أدمز برودكشن</h1>
-  <p>Music Production Studio<br>استوديو إنتاج موسيقي</p>
-</header>
+<body class="dark">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><img src="/images/logo.png" alt="Adam's Production" class="logo" /> <span class="brand-text">Adam&#39;s <strong>Production</strong></span></a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav" class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="description">
-  سجل تجاري 1-152983
-  تنظيم الحفلات والأعراس
-  ادارة وتعهد فنانيين
-  هندسة صوت
-  DJ
-  تسجيل زفات وأغاني خاصة
-  اغاني جديد
-  تصميم مسارح
-  للتواصل: +973 3804 4608
-</section>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title">Adam&#39;s Production</h1>
+          <p class="hero-sub">Music Production Studio — تنظيم الحفلات والأعراس — هندسة صوت</p>
+          <ul class="hero-list">
+            <li>سجل تجاري 1-152983</li>
+            <li>ادارة وتعهد فنانيين • DJ • تصميم مسارح</li>
+            <li>تسجيل زفات وأغاني خاصة • اغاني جديد</li>
+          </ul>
+          <p class="cta-row">
+            <a class="btn" href="services.html">Our Services</a>
+            <a class="btn ghost" href="#contact">Contact Us</a>
+          </p>
 
-<section class="links">
-  <a class="link-btn" href="https://instagram.com/adamspro.bh" target="_blank" rel="noopener">Instagram / إنستجرام</a>
-  <a class="link-btn" href="https://wa.me/97338044608" target="_blank" rel="noopener">WhatsApp / واتساب</a>
-  <a class="link-btn" href="https://www.youtube.com/channel/UC-adamspro" target="_blank" rel="noopener">YouTube / يوتيوب</a>
-  <a class="link-btn" href="mailto:adamsproduction.bh@gmail.com" target="_blank" rel="noopener">Email / بريد إلكتروني</a>
-</section>
+          <div class="contact-strip">
+            <a class="contact-pill" href="https://wa.me/97338044608" aria-label="WhatsApp">WhatsApp: +973 3804 4608</a>
+            <a class="contact-pill" href="https://instagram.com/adamspro.bh" target="_blank">@adamspro.bh</a>
+            <a class="contact-pill" href="mailto:adamsproduction.bh@gmail.com">adamsproduction.bh@gmail.com</a>
+          </div>
+        </div>
 
-<footer>
-  © 2025 Adam's Production
-</footer>
+        <div class="hero-media">
+          <div class="logo-card">
+            <img src="/images/logo.png" alt="Adam's Production logo" class="logo-big" />
+            <p class="logo-caption">Adam&#39;s Production — Music Production Studio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES / SERVICES SHORT -->
+    <section class="features container">
+      <article class="feature">
+        <h3>تنظيم الحفلات والأعراس</h3>
+        <p>Event management & wedding planning — full production services.</p>
+      </article>
+      <article class="feature">
+        <h3>هندسة صوت • Recording</h3>
+        <p>Professional recording, mixing & mastering.</p>
+      </article>
+      <article class="feature">
+        <h3>ادارة وتعهد فنانيين • DJs</h3>
+        <p>Artist management, bookings & DJ services.</p>
+      </article>
+    </section>
+
+    <!-- PORTFOLIO + YOUTUBE -->
+    <section class="portfolio container">
+      <h2>Recent Work & Media</h2>
+      <div class="grid gallery-grid">
+        <figure><img src="/images/work1.jpg" alt="Work 1"><figcaption>Live Event</figcaption></figure>
+        <figure><img src="/images/work2.jpg" alt="Work 2"><figcaption>Studio Session</figcaption></figure>
+        <figure><img src="/images/work3.jpg" alt="Work 3"><figcaption>Stage Design</figcaption></figure>
+      </div>
+
+      <div class="video-row">
+        <h3>Latest Videos</h3>
+        <!-- embedded YouTube — uses the channel/video id you provided -->
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=UCejzhLjlixbga-bxYcSRxmA" title="Adam's Production YouTube" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="small-note">YouTube channel: <a href="https://www.youtube.com/channel/UCejzhLjlixbga-bxYcSRxmA" target="_blank">Adam's Production</a></p>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section id="contact" class="contact container">
+      <h2>Talk to us — للتواصل</h2>
+      <p>Tell us about your project — we respond within 1 business day.</p>
+
+      <div class="contact-columns">
+        <form class="contact-form" action="https://formsubmit.co/adamsproduction.bh@gmail.com" method="POST">
+          <!-- FormSubmit: no JS required; you will receive the email directly -->
+          <input type="hidden" name="_subject" value="Website Contact — Adam's Production">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="name" placeholder="Your name / اسمك" required>
+          <input type="email" name="email" placeholder="Email / بريدك" required>
+          <input type="text" name="phone" placeholder="Phone / رقم الهاتف (optional)">
+          <textarea name="message" rows="5" placeholder="Describe your project / وصف المشروع" required></textarea>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+
+        <aside class="contact-info">
+          <h4>Contact details</h4>
+          <p>Phone / WhatsApp: <a href="https://wa.me/97338044608">+973 3804 4608</a></p>
+          <p>Email: <a href="mailto:adamsproduction.bh@gmail.com">adamsproduction.bh@gmail.com</a></p>
+          <p>Instagram: <a href="https://instagram.com/adamspro.bh" target="_blank">@adamspro.bh</a></p>
+          <p>YouTube: <a href="https://www.youtube.com/channel/UCejzhLjlixbga-bxYcSRxmA" target="_blank">Adam's Production</a></p>
+          <p class="business-lic">سجل تجاري 1-152983</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Adam&#39;s Production — All rights reserved.</p>
+      <nav class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>
+about.html
+html
+Copy code
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Adam&#39;s Production</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="dark">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><img src="/images/logo.png" alt="logo" class="logo-small" /> <span class="brand-text">Adam&#39;s Production</span></a>
+      <button id="nav-toggle-2" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav-2" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container about">
+    <h1>About Adam&#39;s Production</h1>
+    <p>Adam's Production is a premium music production studio based in Bahrain. We provide end-to-end production, live events, DJ services, artist management, and audio engineering.</p>
+
+    <section class="team">
+      <h2>Our team / فريقنا</h2>
+      <div class="grid">
+        <article class="team-card">
+          <img src="/images/team1.jpg" alt="Team member">
+          <h3>Jane Doe</h3>
+          <p>CEO</p>
+        </article>
+        <article class="team-card">
+          <img src="/images/team2.jpg" alt="Team member">
+          <h3>John Smith</h3>
+          <p>CTO</p>
+        </article>
+        <article class="team-card">
+          <img src="/images/team3.jpg" alt="Team member">
+          <h3>Ali Khan</h3>
+          <p>Head of Design</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-2"></span> Adam&#39;s Production</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
+services.html
+html
+Copy code
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Adam&#39;s Production</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="dark">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><img src="/images/logo.png" alt="logo" class="logo-small" /> <span class="brand-text">Adam&#39;s Production</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container services">
+    <h1>Services — خدماتنا</h1>
+    <p>We offer premium studio, live event, and artist services — see below for Arabic/English descriptions.</p>
+
+    <div class="services-list">
+      <div class="service-row">
+        <div class="service-en">
+          <h3>Event & Wedding Production</h3>
+          <p>Full production for concerts and weddings — sound, lighting & staging.</p>
+        </div>
+        <div class="service-ar">
+          <h3>تنظيم الحفلات والأعراس</h3>
+          <p>خدمات كاملة للصوت والاضاءة وتصميم المسارح.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-en">
+          <h3>Recording & Audio Engineering</h3>
+          <p>Tracking, mixing, mastering, and vocal production.</p>
+        </div>
+        <div class="service-ar">
+          <h3>هندسة صوت</h3>
+          <p>تسجيل ومكس وماسترنغ وإنتاج صوتي احترافي.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-en">
+          <h3>Artist Management & DJ</h3>
+          <p>Artist bookings, management & DJ services for events.</p>
+        </div>
+        <div class="service-ar">
+          <h3>ادارة وتعهد فنانيين • DJ</h3>
+          <p>حجوزات وإدارة فنية وخدمات دي جي احترافية.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-en">
+          <h3>Custom Songs & Wedding Tracks</h3>
+          <p>Personalized wedding songs and special recordings.</p>
+        </div>
+        <div class="service-ar">
+          <h3>تسجيل زفات وأغاني خاصة</h3>
+          <p>اغاني جديدة وتسجيل زفات مخصصة للاحتفالات.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-3"></span> Adam&#39;s Production</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
+contact.html
+html
+Copy code
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Adam&#39;s Production</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="dark">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><img src="/images/logo.png" alt="logo" class="logo-small" /> <span class="brand-text">Adam&#39;s Production</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact Us / للتواصل</h1>
+    <p>Phone / WhatsApp: <a href="https://wa.me/97338044608">+973 3804 4608</a></p>
+    <p>Email: <a href="mailto:adamsproduction.bh@gmail.com">adamsproduction.bh@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/adamspro.bh" target="_blank">@adamspro.bh</a></p>
+    <p>YouTube: <a href="https://www.youtube.com/channel/UCejzhLjlixbga-bxYcSRxmA" target="_blank">Adam's Production</a></p>
+
+    <form class="contact-form" action="https://formsubmit.co/adamsproduction.bh@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Website Contact — Adam's Production">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your name / اسمك" required>
+      <input type="email" name="email" placeholder="Email / بريدك" required>
+      <textarea name="message" rows="6" placeholder="Message / الرسالة" required></textarea>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-4"></span> Adam&#39;s Production</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
+css/style.css
+css
+Copy code
+:root{
+  --accent:#ff8c00; /* orange */
+  --gold:#d4af37;
+  --bg:#000000;
+  --muted:#bfc8d3;
+  --card:#0b0b0b;
+  --text:#f3f3f3;
+  --max-width:1200px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:Inter,Segoe UI,Roboto,system-ui,Arial,sans-serif;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #070707 100%);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-width);margin:0 auto;padding:2rem}
+.nav{background:linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2));padding:0.75rem 0;position:sticky;top:0;z-index:40;backdrop-filter: blur(4px)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:0.8rem;text-decoration:none;color:var(--text)}
+.logo{height:42px}
+.logo-small{height:34px}
+.brand-text{font-weight:700;font-size:1.05rem}
+.brand-text strong{color:var(--accent)}
+#nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:1.5rem}
+.nav-links{display:flex;gap:1rem}
+.nav-links a{color:var(--muted);text-decoration:none;padding:0.35rem 0;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+.hero{padding:4rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+.hero-copy h1{font-size:2.4rem;margin:0 0 0.4rem;color:var(--text);letter-spacing:0.6px}
+.hero-sub{color:var(--muted);margin-bottom:1rem}
+.hero-list{list-style:none;padding:0;margin:0 0 1.2rem;color:var(--muted)}
+.cta-row{margin-top:1rem}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--gold));color:#0b0b0b;padding:0.6rem 1rem;border-radius:10px;text-decoration:none;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,0.5);border:none;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.contact-strip{margin-top:1rem;display:flex;gap:0.6rem;flex-wrap:wrap}
+.contact-pill{background:rgba(255,255,255,0.03);padding:0.4rem 0.6rem;border-radius:8px;color:var(--muted);text-decoration:none}
+.hero-media{display:flex;justify-content:center}
+.logo-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1.2rem;border-radius:14px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.7)}
+.logo-big{max-width:100%;height:200px;object-fit:contain;filter:drop-shadow(0 8px 20px rgba(0,0,0,0.7))}
+.logo-caption{margin-top:0.6rem;color:var(--muted)}
+.features{display:flex;gap:1.4rem;justify-content:space-between;padding:2rem 0}
+.feature{flex:1;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:1.4rem;border-radius:10px;text-align:center;border:1px solid rgba(255,255,255,0.02)}
+.feature h3{margin:0.6rem 0;color:var(--accent)}
+.portfolio .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.portfolio figure{margin:0;background:var(--card);padding:0;border-radius:8px;overflow:hidden;transition:transform .25s}
+.portfolio img{width:100%;display:block}
+.portfolio figure:hover{transform:translateY(-6px)}
+.video-row{margin-top:1.2rem}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+.contact{padding:2rem 0}
+.contact-columns{display:grid;grid-template-columns:1fr 360px;gap:2rem;align-items:start}
+.contact-form{display:grid;gap:0.75rem}
+.contact-form input,.contact-form textarea{padding:0.75rem;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+.contact-info{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:1rem;border-radius:10px}
+.services-list{display:flex;flex-direction:column;gap:1rem}
+.service-row{display:flex;gap:1rem;align-items:flex-start}
+.service-en,.service-ar{flex:1;padding:1rem;border-radius:8px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
+.service-en h3,.service-ar h3{margin:0 0 0.4rem;color:var(--gold)}
+.team .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.team-card{background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:1rem;border-radius:8px;text-align:center}
+.team-card img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1.2rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.small-note{color:var(--muted);font-size:0.9rem}
+.business-lic{margin-top:0.8rem;color:var(--muted);font-weight:600}
+
+/* Animations */
+@keyframes floaty { 0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)} }
+.logo-big{animation:floaty 6s ease-in-out infinite}
+
+/* Responsive */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .portfolio .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-columns{grid-template-columns:1fr}
+  #nav-toggle{display:block}
+  .nav-links{display:none;flex-direction:column;background:transparent;padding-top:1rem}
+}
+@media(max-width:560px){
+  .portfolio .gallery-grid{grid-template-columns:1fr}
+  .team .grid{grid-template-columns:1fr}
+}
+js/main.js
+js
+Copy code
+// Small JS for interactions
+document.addEventListener('DOMContentLoaded',()=>{
+  // set year in footers
+  const y = new Date().getFullYear();
+  ['year','year-2','year-3','year-4'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.textContent = y;
+  });
+
+  // mobile nav toggle
+  const t = document.getElementById('nav-toggle');
+  const nav = document.getElementById('main-nav');
+  if(t && nav){ t.addEventListener('click', ()=>{ nav.style.display = (nav.style.display === 'flex' || nav.style.display === '') ? 'none' : 'flex' }) }
+
+  const t2 = document.getElementById('nav-toggle-2');
+  const nav2 = document.getElementById('main-nav-2');
+  if(t2 && nav2){ t2.addEventListener('click', ()=>{ nav2.style.display = (nav2.style.display === 'flex' || nav2.style.display === '') ? 'none' : 'flex' }) }
+
+  // Gallery click -> open in new tab (simple lightbox replacement)
+  document.querySelectorAll('.gallery-grid img').forEach(img=>{
+    img.addEventListener('click', ()=>{ window.open(img.src, '_blank') });
+  });
+});
+/images/README.txt
+diff
+Copy code
+Place your images in the images/ folder. Suggested files (names used in the template):
+- logo.png        (your provided logo)
+- favicon.png     (16/32px square)
+- hero-placeholder.jpg
+- work1.jpg
+- work2.jpg
+- work3.jpg
+- team1.jpg
+- team2.jpg
+- team3.jpg
+- icon1.svg, icon2.svg, icon3.svg
+
+If you don't have all assets, use placeholders:
+https://picsum.photos/1200/800
+https://placehold.co/
